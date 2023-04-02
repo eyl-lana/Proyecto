@@ -1,4 +1,4 @@
-validarFormulario();{
+ function validarFormulario(){
     var nombre = document.forms["registro"]["nombre"].value;
     var apellido = document.forms["registro"]["apellido"].value;
     var correo = document.forms["registro"]["correo"].value;
