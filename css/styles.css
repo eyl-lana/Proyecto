@@ -1,0 +1,86 @@
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+main{
+    background-color: #CEFFBC;
+    padding: 0px;
+    margin: 0px;
+}
+
+.usuario{
+    width: 50px;
+}
+
+.wrap{
+    width: auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5),rgb(0 0 0 / .5)),url(/assets/Fondotitulo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.wrap-texto{
+    color: #fff;
+    text-align: center;
+    padding: 2rem 3rem;
+    border: 3px solid white;
+    box-shadow: 0 0 25px #222;
+    backdrop-filter: blur(10px);
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+
+ul li{
+    margin: 10px;
+}
+
+/*.card{
+    width: auto !important;
+}*/
+
+.container{
+    padding-top: 50px;
+    text-align: center;
+
+}
+
+.fila{
+    display: flex;
+}
+
+.bloque{
+    padding: 1em;
+}
+
+footer{
+    background-color: white;
+}
+
+.containerfooter{
+    padding-right: 1000px;
+    padding-top: 50px;
+    padding-left: 100px;
+    text-align: left;
+}
+
+button{
+    border: 0;
+    background-color: white;
+
+}
