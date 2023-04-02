@@ -55,17 +55,9 @@ ul li{
 }*/
 
 .container{
-    padding-top: 50px;
+    /*padding-top: 50px;*/
     text-align: center;
 
-}
-
-.fila{
-    display: flex;
-}
-
-.bloque{
-    padding: 1em;
 }
 
 footer{
@@ -136,4 +128,39 @@ button{
     height: 40px;
     text-align: center;
     border-bottom: 1px solid;
+}
+
+.container{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.fila{
+    display: flex;
+}
+
+.bloque{
+    padding: 1em;
+    border: 1px solid rgba(0, 0, 0, 0.281);
+}
+
+.bloque img{
+    height: 500px;
+    width: 450px;
+}
+
+.bloque p{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.bloque button{
+    border: 1px;
+    background-color: #82b96e;
+}
+
+.bloque-dietas img{
+    height: 500px;
+    width: 650px;
 }
