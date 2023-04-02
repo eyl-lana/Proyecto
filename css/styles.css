@@ -6,6 +6,11 @@
   'opsz' 48
 }
 
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
 .logo{
     width: 100px;
     height: 100px;
@@ -163,4 +168,14 @@ button{
 .bloque-dietas img{
     height: 500px;
     width: 650px;
+    padding: 20px;
+}
+
+.bloque-receta{
+    padding: 1em;
+}
+
+.imagen-sede{
+    width: 1000px;
+    height: 500px;
 }
