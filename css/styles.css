@@ -6,9 +6,11 @@
   'opsz' 48
 }
 
+
 body{
-    padding: 0px;
-    margin: 0px;
+
+    margin-left: 0% !important;
+    border: 0 !important;
 }
 
 .logo{
@@ -179,3 +181,7 @@ button{
     width: 1000px;
     height: 500px;
 }
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    filter: invert(108%);
+  }
+
