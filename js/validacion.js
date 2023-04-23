@@ -43,7 +43,7 @@ $( "#registro" ).validate({
         
     },
     submitHandler: function(form) {
-        form.submit(alert("registro exitoso"));
+        form.submit(alert("Registro exitoso"));
     }
   }); 
 jQuery.validator.addMethod("lettersonly", function(value, element) 

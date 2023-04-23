@@ -18,8 +18,8 @@ $("#newrecipe").validate({
     },
     messages:{
         nombre_receta:{
-            required:"Por favor ingrese su nombre",
-            maxlength: "El nombre debe contener menos de 50 caracteres",
+            required:"Por favor ingrese el nombre de la receta",
+            maxlength: "El nombre de la receta debe contener menos de 50 caracteres",
         },
         desc_receta:{
             required:"Por favor ingrese descripcion a su receta",
@@ -32,10 +32,10 @@ $("#newrecipe").validate({
             required:"Por favor ingrese la preparacion de su receta"
         },
         inlineFormCustomSelect:{
-            required:"Por favor ingrese un nivel de dificulta"
+            required:"Por favor ingrese un nivel de dificultad"
           }
     },
     submitHandler: function(form) {
-        form.submit(alert("registro exitoso"));
+        form.submit(alert("Registro exitoso"));
     }
   }); 
