@@ -57,14 +57,8 @@ ul li{
     margin: 10px;
 }
 
-/*.card{
-    width: auto !important;
-}*/
-
 .container{
-    /*padding-top: 50px;*/
     text-align: center;
-
 }
 
 footer{
@@ -181,7 +175,7 @@ button{
     width: 1000px;
     height: 500px;
 }
+
 .carousel-control-prev-icon, .carousel-control-next-icon {
     filter: invert(108%);
-  }
-
+}
