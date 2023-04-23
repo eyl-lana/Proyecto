@@ -26,7 +26,9 @@ $( "#registro" ).validate({
             lettersonly:"El nombre solo debe contener letras"
         },
         apellido:{
-            required:"Por favor ingrese su apellido"
+            required:"Por favor ingrese su apellido",
+            maxlength: "El apellido debe contener menos de 30 caracteres",
+            lettersonly:"El apellido solo debe contener letras"
         },
         correo:{
             required:"Ingrese un email",

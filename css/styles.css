@@ -1,189 +1,177 @@
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
 
-
-body{
-
-    margin-left: 0% !important;
-    border: 0 !important;
+body {
+  margin-left: 0% !important;
+  border: 0 !important;
 }
 
-.logo{
-    width: 100px;
-    height: 100px;
+.logo {
+  width: 100px;
+  height: 100px;
 }
 
-main{
-    background-color: #CEFFBC;
-    padding: 0px;
-    margin: 0px;
+main {
+  background-color: #CEFFBC;
+  padding: 0px;
+  margin: 0px;
 }
 
-.usuario{
-    width: 50px;
+.usuario {
+  width: 50px;
 }
 
-.wrap{
-    width: auto;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5),rgb(0 0 0 / .5)),url(/assets/Fondotitulo.jpg);
-    background-size: cover;
-    background-position: center;
+.wrap {
+  width: auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/Fondotitulo.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
-.wrap-texto{
-    color: #fff;
-    text-align: center;
-    padding: 2rem 3rem;
-    border: 3px solid white;
-    box-shadow: 0 0 25px #222;
-    backdrop-filter: blur(10px);
+.wrap-texto {
+  color: white;
+  text-align: center;
+  padding: 2rem 3rem;
+  border: 3px solid white;
+  box-shadow: 0 0 25px #222;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 
-ul{
-    list-style: none;
-    display: flex;
+ul {
+  list-style: none;
+  display: flex;
+}
+ul li {
+  margin: 10px;
 }
 
-ul li{
-    margin: 10px;
+.container {
+  text-align: center;
 }
 
-.container{
-    text-align: center;
+footer {
+  background-color: white;
 }
 
-footer{
-    background-color: white;
+.containerfooter {
+  padding-right: 1000px;
+  padding-top: 50px;
+  padding-left: 100px;
+  text-align: left;
 }
 
-.containerfooter{
-    padding-right: 1000px;
-    padding-top: 50px;
-    padding-left: 100px;
-    text-align: left;
+button {
+  border: 0;
+  background-color: white;
 }
 
-button{
-    border: 0;
-    background-color: white;
-
+.formulario {
+  width: 400px;
+  height: 450px;
+  background: #CEFFBC;
+  margin: auto;
+  margin-top: 180px;
+  box-shadow: 7px 13px 37px black;
+  padding: 20px 50px;
+  border-top: 4px solid #82b96e;
+  color: black;
+}
+.formulario h5 {
+  margin: 0;
+  text-align: center;
+  height: 40px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid;
+  font-size: 20px;
+}
+.formulario a {
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+}
+.formulario p {
+  height: 40px;
+  text-align: center;
+  border-bottom: 1px solid;
 }
 
-.formulario{
-    width: 400px;
-    height: 450px;
-    background: #CEFFBC;
-    margin: auto;
-    margin-top: 180px;
-    box-shadow: 7px 13px 37px #000;
-    padding: 20px 50px;
-    border-top: 4px solid #82b96e;
-    color: black;
+.controls {
+  width: 378px;
+  border: 1px solid #82b96e;
+  margin-bottom: 15px;
+  padding: 11px 10px;
+  background: rgba(0, 0, 0, 0.177);
+  font-size: 14px;
 }
 
-.formulario h5{
-    margin: 0;
-    text-align: center;
-    height: 40px;
-    margin-bottom: 30px;
-    border-bottom: 1px solid;
-    font-size: 20px;
-}
-.controls{
-    width: 378px;
-    border: 1px solid #82b96e;
-    margin-bottom: 15px;
-    padding: 11px 10px;
-    background: rgba(0, 0, 0, 0.177);
-    font-size: 14px;
+.controls1 {
+  width: 300px;
+  border: 1px solid #82b96e;
+  margin-bottom: 15px;
+  padding: 11px 10px;
+  background: rgba(0, 0, 0, 0.177);
+  font-size: 14px;
 }
 
-.controls1{
-    width: 300px;
-    border: 1px solid #82b96e;
-    margin-bottom: 15px;
-    padding: 11px 10px;
-    background: rgba(0, 0, 0, 0.177);
-    font-size: 14px;
+.registrar {
+  width: 100%;
+  height: 40px;
+  background-color: #82b96e;
+  border: none;
+  color: rgba(0, 0, 0, 0.649);
+  margin-bottom: 16px;
+  align-items: center;
+  font-weight: bold;
 }
 
-.registrar{
-    width: 100%;
-    height: 40px;
-    background-color: #82b96e;
-    border: none;
-    color: rgba(0, 0, 0, 0.649);
-    margin-bottom: 16px;
-    align-items: center;
-    font-weight: bold;
+.container {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-.formulario a{
-    color: black;
-    font-size: 14px;
-    text-decoration: none;
+.fila {
+  display: flex;
 }
 
-.formulario p{
-    height: 40px;
-    text-align: center;
-    border-bottom: 1px solid;
+.bloque {
+  padding: 1em;
+  border: 1px solid rgba(0, 0, 0, 0.281);
+}
+.bloque img {
+  height: 500px;
+  width: 450px;
+}
+.bloque p {
+  text-align: center;
+  padding-top: 30px;
+}
+.bloque button {
+  border: 1px;
+  background-color: #82b96e;
 }
 
-.container{
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+.bloque-dietas img {
+  height: 500px;
+  width: 650px;
+  padding: 20px;
 }
 
-.fila{
-    display: flex;
+.bloque-receta {
+  padding: 1em;
 }
 
-.bloque{
-    padding: 1em;
-    border: 1px solid rgba(0, 0, 0, 0.281);
-}
-
-.bloque img{
-    height: 500px;
-    width: 450px;
-}
-
-.bloque p{
-    text-align: center;
-    padding-top: 30px;
-}
-
-.bloque button{
-    border: 1px;
-    background-color: #82b96e;
-}
-
-.bloque-dietas img{
-    height: 500px;
-    width: 650px;
-    padding: 20px;
-}
-
-.bloque-receta{
-    padding: 1em;
-}
-
-.imagen-sede{
-    width: 1000px;
-    height: 500px;
+.imagen-sede {
+  width: 1000px;
+  height: 500px;
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
-    filter: invert(108%);
-}
+  filter: invert(108%);
+}/*# sourceMappingURL=styles.css.map */
