@@ -1,23 +1,51 @@
- function validarFormularioRegistro(){
-    var nombre = document.forms["registro"]["nombre"].value;
-    var apellido = document.forms["registro"]["apellido"].value;
-    var correo = document.forms["registro"]["correo"].value;
-    var contrasena = document.forms["registro"]["contrasena"].value;
-
-    if (nombre == "" || apellido == "" || correo == "" || contrasena == ""){
-        alert("Todos los campos son obligatorios");
-        return false;
+$( "#registro" ).validate({
+    rules: {
+        nombre:{
+        lettersonly: true,    
+        required: true,
+        maxlength: 30
+      },
+      apellido:{
+        lettersonly: true,    
+        required: true,
+        maxlength: 30
+      },
+      correo:{
+        required: true
+      },
+      contrasena: "required",
+        recontrasena:{
+          equalTo: "#contrasena"
+        }
+      
+    },
+    messages:{
+        nombre:{
+            required:"Por favor ingrese su nombre",
+            maxlength: "El nombre debe contener menos de 30 caracteres",
+            lettersonly:"El nombre solo debe contener letras"
+        },
+        apellido:{
+            required:"Por favor ingrese su apellido"
+        },
+        correo:{
+            required:"Ingrese un email",
+            email:"Ingrese un mail valido"
+        },
+        contrasena:{
+            required:"Ingrese una contraseña"
+        },
+        recontrasena:{
+            equalTo:"Las contraseñas no son iguales"
+        }
+        
+    },
+    submitHandler: function(form) {
+        form.submit(alert("registro exitoso"));
     }
-    return true;
-}
-
-function validarFormularioAcceso(){
-    var correo = document.forms["acceso"]["correo"].value;
-    var contrasena = document.forms["acceso"]["contrasena"].value;
-
-    if (correo == "" || contrasena == ""){
-        alert("Todos los campos son obligatorios");
-        return false;
-    }
-    return true;
-}
+  }); 
+jQuery.validator.addMethod("lettersonly", function(value, element) 
+{
+return this.optional(element) || /^[a-z]+$/i.test(value);
+}, "Ingrese solo letras por favor");
+ 

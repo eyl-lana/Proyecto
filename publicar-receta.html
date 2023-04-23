@@ -14,14 +14,13 @@
         <!-- icon -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-        <!-- jquery -->
+        <!-- jQuery import & jQ validate -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
         <!-- js -->
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    </head>
-
     <body>
 
         <header> <!-- menu de navegacion -->
@@ -100,32 +99,32 @@
                     Puedes publicar la receta que deseas, ¡siempre y cuando sea saludable!
                 </h4>
 
-                <form style="text-align: left;">
+                <form style="text-align: left;" id="newrecipe" name="newrecipe">
                     <div class="form-group">
                         <label for="nombre_receta">Nombre de la receta</label>
-                        <input type="text" class="form-control" id="nombre_receta" aria-describedby="emailHelp" placeholder="Ingrese nombre de la receta">
+                        <input type="text" class="form-control" id="nombre_receta" name="nombre_receta" aria-describedby="emailHelp" placeholder="Ingrese nombre de la receta">
                     </div>
                     </br>
                     <div class="form-group">
                         <label for="desc_receta">Descripción breve</label>
-                        <input type="text" class="form-control" id="desc_receta" placeholder="Ingrese una descripción breve de la receta">
+                        <input type="text" class="form-control" id="desc_receta" name="desc_receta" placeholder="Ingrese una descripción breve de la receta">
                     </div>
                     </br>
                     <div class="form-group">
-                        <label for="desc_receta">Ingredientes</label>
-                        <input type="text" class="form-control" id="desc_receta" placeholder="Ingrese los ingredientes">
+                        <label for="desc_ingredientes">Ingredientes</label>
+                        <input type="text" class="form-control" id="desc_ingredientes" name="desc_ingredientes" placeholder="Ingrese los ingredientes">
                     </div>
                     </br>
                     <div class="form-group">
-                        <label for="desc_receta">Elaboración</label>
-                        <input type="text" class="form-control" id="desc_receta" placeholder="Ingrese la elaboración paso por paso">
+                        <label for="desc_preparacion">Preparación</label>
+                        <input type="text" class="form-control" id="desc_preparacion" name="desc_preparacion" placeholder="Ingrese la elaboración paso por paso">
                     </div>
                     </br>
                     <div class="form-row align-items-center">
                         <div class="col-auto my-1">
                           <label class="mr-sm-2" for="inlineFormCustomSelect">Nivel de receta</label>
-                          <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                            <option selected>Elija una opción ...</option>
+                          <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" required>
+                            <option value="">Elija una opción ...</option>
                             <option value="1">Nivel fácil</option>
                             <option value="2">Nivel medio</option>
                             <option value="3">Nivel dificil</option>
@@ -144,7 +143,7 @@
 
                     <div class="d-grid gap-2 d-md-block" style="text-align: center;">
                         <a href="#">
-                            <button type="button" class="btn btn-success">Publicar</button>
+                            <button type="submit" class="btn btn-success">Publicar</button>
                         </a>
                     </div>
                 </form>
@@ -195,8 +194,6 @@
         </footer>
         
 
-        <script src="js/validacion.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
-        <script src="" async defer></script>
+        <script src="js/newRecipe.js"></script>
     </body>
 </html>

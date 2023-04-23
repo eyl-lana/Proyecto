@@ -7,12 +7,22 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/styles.css">
+        <!-- jquery -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+        
     </head>
     <body>
+        <header>
+            <a class="navbar-brand" href="index.html">
+                <img class="logo" src="assets/Logo.png">
+            </a>
+        </header>
         <div class="container-fluid">
             <div class="formulario">
                 <h5>Iniciar sesión</h5>
-                <form name="acceso" onsubmit="return validarFormularioAcceso()">
+                <form name="acceso" id="acceso">
                     <input class="controls" type="email" id="correo" name="correo" placeholder="Correo electrónico"><br>
             
                     <input class="controls" type="password" id="contrasena" name="contrasena" placeholder="Contraseña"><br>
