@@ -4,6 +4,10 @@ $background-form:#CEFFBC;
 
 .formulario{
     background: $background-form;
+    p{
+        color: $border-color;
+    }
+
 }
 .registrar{
     background-color: $border-color;

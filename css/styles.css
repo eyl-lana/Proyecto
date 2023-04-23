@@ -98,9 +98,17 @@ button{
     border-bottom: 1px solid;
     font-size: 20px;
 }
-
 .controls{
-    width: 380px;
+    width: 378px;
+    border: 1px solid #82b96e;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    background: rgba(0, 0, 0, 0.177);
+    font-size: 14px;
+}
+
+.controls1{
+    width: 300px;
     border: 1px solid #82b96e;
     margin-bottom: 15px;
     padding: 11px 10px;
