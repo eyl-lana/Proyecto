@@ -183,3 +183,7 @@ $text-color: black;
   .carousel-control-prev-icon, .carousel-control-next-icon {
       filter: invert(108%);
   }
+
+  label.error{
+    color: red;
+  }
